@@ -4,9 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <title>CV</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="container">
+            <header class="header">
+                <div class="header__columms">
+                    <div class="header__photo"><img src="images/photo.jpg" alt="Photo"></div>
+                    <div class="header__name">Maksim Fesko<br>Front-end web developer (Beginner)
+                    </div>
+                </div>
+            </header>
+        <main>
+        <div class="contact">
+            <h1> Contacts </h1>
+            <nav>
+                <ul>
+                    <li><a href="https://t.me/jajabojo"><img src="images/icon/telega.ico" alt="telegram"></a></li>
+                    <li><a href="mailto:it.web.razrab@gmail.com"><img src="images/icon/gmail.ico" alt="gmail"></a></li>
+                    <li><img src="images/icon/phone.ico" alt="phone">+375(33)693-29-23</li>
+                </ul>
+            </nav>
+        
+        </div>
+        <div class="about">
+            <h2 class="about__header">About me</h2>
+            <div class="about__text">My goal is to become a full-fledged developer. My forte is persistence and patience. It helps me in my studies.</div>
+        </div>
+        <div class="skills">
+            <h2 class="skills__header">Skills</h2>
+            <ul class="skills__list">
+                <li><img src="images/icon/html.ico" alt="HTML">HTML</li>
+                <li><img src="images/icon/css.ico" alt="CSS">CSS</li>
+                <li><img src="images/icon/scss.ico" alt="SCSS">SCSS</li>
+                <li>BEM</li>
+                <li><img src="images/icon/js.ico" alt="JS">JS</li>
+                <li><img src="images/icon/figma.ico" alt="Figma">Figma</li>
+            </ul>
+        </div>
+        <div class="code">
+            <h2 class="code__header">Code Example</h2>
+            <pre class="code__text">timeList.addEventListener('click', (event) => {
+        if (event.target.classList.contains('time-btn')) {
+            time = parseInt(event.target.getAttribute('data-time'))
+            screens[1].classList.add('up')
+            startGame()
+        }
+        })</pre>
+        </div>
+        <div class="work">
+            <h2 class="work__header">My works</h2>
+            <div class="work__list">
+                <ul>
+                    <li><a href="https://jajabojo.github.io/rsschool-cv/"><img src="images/Screenshot_1.png" alt="work"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="eduction">
+            <h2 class="education__header">Education</h2>
+            <div class="education__text">Technical education. Knowledge of English A1</div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__github"><a href="https://github.com/JaJaBoJo"><img src="images/icon/github.ico" alt="GitHub"></a></div>
+        <div class="footer__data">27.12.2021</div>
+        <div class="footer__rs"><a href=""><img src="images/rs_school_js.svg" alt="rsschool"></a></div>
+    </footer>
+    </div>
+    </div>
 </body>
 </html>
